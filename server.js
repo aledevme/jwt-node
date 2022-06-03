@@ -13,8 +13,6 @@ const userRouter = require('./routes/user')
 
 app.use('/users', userRouter)
 
-
-//create a server object:
 app.listen(port, () => {
     const connection =  mongoose.connect(conn_str,{ 
         useNewUrlParser: true, 
